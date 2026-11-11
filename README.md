@@ -18,10 +18,13 @@ module in `Source/`, and `PackageName` in `Config/DefaultEngine.ini`.
 
 ## Updating DrsFramework
 
+Point the submodule only at a commit on DrsFramework `main`. The full Git workflow is in
+[`Plugins/DrsFramework/Docs/GitWorkflow.md`](Plugins/DrsFramework/Docs/GitWorkflow.md).
+
 ```
 git -C Plugins/DrsFramework pull origin main
 git add Plugins/DrsFramework
-git commit -m "Update DrsFramework"
+git commit -m "chore: update DrsFramework"
 ```
 
 ## Licence
