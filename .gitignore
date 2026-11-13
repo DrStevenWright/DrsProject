@@ -4,6 +4,13 @@ Intermediate/
 Saved/
 DerivedDataCache/
 
+# Files UE writes under Build/ when packaging. Anything else in Build/ (e.g. a PakDenylist) stays tracked.
+# src/ and project.properties are regenerated on every Android package; FileOpenOrder/ is cook output.
+Build/Android/src/
+Build/Android/project.properties
+Build/*/FileOpenOrder/
+Build/Android/res/
+
 # IDE files
 .vs/
 .vscode/
@@ -15,6 +22,10 @@ DerivedDataCache/
 *.sdf
 *.VC.db
 *.VC.opendb
+*.user
+
+# Claude Code per-user settings
+.claude/settings.local.json
 
 # OS files
 .DS_Store
